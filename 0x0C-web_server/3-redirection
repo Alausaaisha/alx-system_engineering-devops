@@ -11,7 +11,7 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www/
 redirect="\\\trewrite ^/redirect_me https://github.com/Alausaaisha permanent;"
-sed -e "51i ${redirect}" -i /etc/nginx/sites-available/default
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+sudo sed -e "51i ${redirect}" -i /etc/nginx/sites-available/default
+echo "Hello World!" | sudo tee /var/www/html/index.html
 sudo service nginx restart
 sudo service nginx start
