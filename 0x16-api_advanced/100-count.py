@@ -61,4 +61,3 @@ def count_words(subreddit, word_list, kw_dict={}, after=''):
             print('{}: {}'.format(key, kw_dict[key]))
     if _next is not None:
         count_words(subreddit, word_list, kw_dict, _next)
-        
