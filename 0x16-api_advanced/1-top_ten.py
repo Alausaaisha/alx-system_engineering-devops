@@ -7,7 +7,7 @@ import requests as req
 def top_ten(subreddit):
     """get the top 10 posts of a subreddit"""
     base = 'https://www.reddit.com'
-    header = {'User-agent': 'a_oluwaferanmi'}
+    header = {'User-agent': 'aisha_alausa'}
     respons = req.get('{}/r/{}/hot.json'
                       .format(base, subreddit),
                       headers=header, allow_redirects=False)
